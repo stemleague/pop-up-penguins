@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+  
     <title>Pop Up Penguins</title>
     <meta charset="utf-8">
-    <!-- App includes -->
+    <!-- Linking our CSS in the file index.css -->
     <link href="index.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script src="index.js"></script>
+    <!-- Linking our Javascript using the link below -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- End app includes -->
+
+    <!-- This segment uses Javascript, which we haven't learned yet - but it will
+        our app pop up an alert when we click on a Yeti -->
+    <script>
+      $(document).ready( function() {
+          $(".yeti").mousedown(function() {
+              alert("Yaaaarrrr!");
+          });
+
+      });
+    </script>
+
 </head>
 <body>
+
     <!--This is the frame for our game. It holds and centers all our other elements-->
     <div id="gameholder">
         <!--This holds the title image-->
@@ -25,5 +38,6 @@
         <div class="penguin8"></div>
         <div class="yeti"></div>
     </div>
+
 </body>
 </html>
