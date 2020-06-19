@@ -1,44 +1,54 @@
-/*This style  gives the body element in our HTML a cool blue background color*/
+
+/* 
+This gives the body element we saw in index.html a blue background color 
+*/
 body {
     background-color: #ccf5f5;
 }
 
-/*This styles the div in the HTML that contains and centers our penguin game*/
+/* 
+Every element has an id attribute, but not all elements use it. You assign elements an id in your HTML file. Make sure to give each element a unique id! 
+
+# is an id selector - it will select the element that has the id you're looking for. We have 2 elements that have an id: gameholder and title 
+*/
+
 #gameholder {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*This styles the title div in or HTML*/
 #title {
     width: 600px;
     height: 150px;
-    /*This property embeds an image into the background of our div*/
+    /* background-image helps us fill the title element with the penguin_title image. */
     background-image:url('media/penguin_title.png');
 }
 
-/*This pseudo class is applied when the mouse hovers over the 1st penguin div*/
+/* 
+Like ids, every element also has a class attribute, and not all elements use it. Class names don't need to be unique! You use classes to give multiple elements the same style.
+
+. is a class selector - it will select all the elements that have the class you're looking for. Our penguins and yeti use classes.
+*/
+
+/* hover is pseudo-class. Pseudo classes are used when something your doing is only temporary. hover makes the style only work when your mouse is hovering over the element */
 .penguin1:hover {
     background-image:url('media/mound_1_hover.png');
-    /*This property changes our cursor to a pointer indicating an interactive element*/
     cursor: pointer;
 }
 
-/*This pseudo class is applied when our 1st penguin div is clicked by the mouse button*/
+/* active is also a pseudo-class This style only works when you're clicking down on the element */
 .penguin1:active {
     background-image:url('media/penguin_1.png');
 }
 
-/*This is the style for our 1st penguin div*/
+/* This is how the element looks when no one is touching it. */
 .penguin1 {
     width: 200px;
     height: 200px;
     float: left;
     background-image:url('media/mound_1.png');
 }
-
-/*These are the styles for our 2nd penguin div.*/
 
 .penguin2:hover {
     background-image:url('media/mound_2_hover.png');
@@ -56,8 +66,6 @@ body {
     background-image:url('media/mound_2.png');
 }
 
-/*These are the styles for our 3rd penguin div.*/
-
 .penguin3:hover {
     background-image:url('media/mound_3_hover.png');
     cursor: pointer;
@@ -73,8 +81,6 @@ body {
     float: left;
     background-image:url('media/mound_3.png');
 }
-
-/*These are the styles for our 4th penguin div.*/
 
 .penguin4:hover {
     background-image:url('media/mound_4_hover.png');
@@ -92,8 +98,6 @@ body {
     background-image:url('media/mound_4.png');
 }
 
-/*These are the styles for our 5th penguin div.*/
-
 .penguin5:hover {
     background-image:url('media/mound_5_hover.png');
     cursor: pointer;
@@ -109,8 +113,6 @@ body {
     float: left;
     background-image:url('media/mound_5.png');
 }
-
-/*These are the styles for our 6th penguin div.*/
 
 .penguin6:hover {
     background-image:url('media/mound_6_hover.png');
@@ -128,8 +130,6 @@ body {
     background-image:url('media/mound_6.png');
 }
 
-/*These are the styles for our 7th penguin div.*/
-
 .penguin7:hover {
     background-image:url(' media/mound_7_hover.png');
     cursor: pointer;
@@ -146,8 +146,6 @@ body {
     background-image:url('media/mound_7.png');
 }
 
-/*These are the styles for our 8th penguin div.*/
-
 .penguin8:hover {
     background-image:url('media/mound_8_hover.png');
     cursor: pointer;
@@ -163,8 +161,6 @@ body {
     float: left;
     background-image:url('media/mound_8.png');
 }
-
-/*These are the styles for our yeti div.*/
 
 .yeti:hover {
     background-image:url('media/mound_9_hover.png');
